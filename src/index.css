@@ -1,0 +1,64 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 400;
+  font-style: normal;
+  src: local('Lato Regular'), url('./assets/fonts/Lato/Lato-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-style: normal;
+  src: local('Lato Bold'), url('./assets/fonts/Lato/Lato-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 600;
+  font-style: normal;
+  src: local('Lato Semi Bold'), url('./assets/fonts/Lato/Lato-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 500;
+  font-style: normal;
+  src: local('Lato Medium'), url('./assets/fonts/Lato/Lato-Medium.ttf') format('truetype');
+}
+
+@layer base {
+  * {
+    @apply box-border m-0 p-0 font-lato;
+  }
+}
+
+@theme {
+  --font-lato: 'Lato', sans-serif;
+
+  /* color */
+  /* Primary */
+  --color-primary: #3254ff;
+  --color-primary-1: #243fdb;
+  --color-primary-2: #192db7;
+  --color-primary-3: #0f1e93;
+  --color-primary-4: #09147a;
+
+  /* Dark */
+  --color-dark-primary: #181a1c;
+  --color-dark-secondary: #79767e;
+  --color-dark-disabled: #9d9ea1;
+
+  /* Light */
+  --color-light-white: #ffffff;
+  --color-light-primary: #e7e3fc;
+  --color-light-secondary: #c1c2c4;
+  --color-light-disabled: #f6f4fe;
+
+  /* Others  */
+  --bg-paper-bg: #22282a;
+  --bg-body-bg: #2f3334;
+
+  --bg-dark-primary: #181a1c;
+}
