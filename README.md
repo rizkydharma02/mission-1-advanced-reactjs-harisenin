@@ -2,7 +2,7 @@
 
 ## Implementation state management with Redux and consume API with mockapi
 
-- mockapi for consume api in this project
+- mockapi for consume api and method crud API in this project
 - state management redux in this project
 
 ## Tech Stack
