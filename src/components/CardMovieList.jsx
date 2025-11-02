@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { dataIcons } from '../assets/icons/dataIcons';
 import { dataFilms } from '../constant/dataFilms';
-import { fetchFilms } from '../store/slices/filmSlice';
+import { fetchFilm } from '../store/slices/filmSlice';
 import { useDispatch, useSelector } from 'react-redux';
 
 const CardMovieList = (props) => {
@@ -11,7 +11,7 @@ const CardMovieList = (props) => {
   const [hoverId, setHoverId] = useState(null);
 
   useEffect(() => {
-    dispatch(fetchFilms());
+    dispatch(fetchFilm());
   }, [dispatch]);
 
   const handlePrev = () => {
